@@ -16,7 +16,7 @@ This simulator models a complete out-of-order execution engine with configurable
 - **Cycle-Accurate Simulation**: Tracks instruction timing through all pipeline stages
 - **Performance Metrics**: Calculates IPC (Instructions Per Cycle) and cycle counts
 
-## 🏗️ Architecture
+## Architecture
 
 ### Pipeline Stages
 
@@ -37,7 +37,7 @@ This simulator models a complete out-of-order execution engine with configurable
 - **Issue Queue (IQ)**: Array-based queue for ready-to-execute instructions
 - **Functional Unit Queues**: Separate queues for different execution latencies
 
-## 💻 Technical Highlights
+## Technical Highlights
 
 ### Skills Demonstrated
 
@@ -60,7 +60,7 @@ This project demonstrates skills directly applicable to FPGA development:
 - **State Machine Design**: Pipeline control logic similar to FPGA state machines
 - **Memory Management**: Efficient buffer management critical for FPGA BRAM usage
 
-## 📋 Build & Usage
+## Build & Usage
 
 ### Prerequisites
 
@@ -100,7 +100,7 @@ The simulator outputs:
 - Total cycles
 - Instructions Per Cycle (IPC)
 
-## 📊 Trace File Format
+## Trace File Format
 
 Trace files contain one instruction per line:
 ```
@@ -114,7 +114,7 @@ Where:
 - `SRC1_REG`: Source register 1 (-1 if none)
 - `SRC2_REG`: Source register 2 (-1 if none)
 
-## 🔧 Project Structure
+## Project Structure
 
 ```
 463_proj3/
@@ -127,33 +127,17 @@ Where:
 └── README.md           # This file
 ```
 
-## 🎓 Educational Context
+## Future Enhancements
 
-This project was developed as part of a computer architecture course, implementing a complete out-of-order processor simulator from scratch. The implementation demonstrates understanding of:
-
-- Tomasulo's algorithm concepts
-- Register renaming techniques
-- Out-of-order execution mechanisms
-- Precise exception handling
-- Performance optimization techniques
-
-## 🚀 Future Enhancements
-
-Potential improvements for FPGA implementation:
-- Branch prediction integration
-- Cache hierarchy modeling
+Potential improvements for future implementation:
 - Multi-threaded execution support
 - Hardware description language (HDL) translation
 - Real-time performance profiling
 
-## 📝 Notes
+## Notes
 
 - The simulator processes instructions in reverse pipeline order (retire → fetch) to handle dependencies correctly
 - Wakeup logic propagates execution results to dependent instructions
 - ROB and IQ use circular buffer implementations for efficient space utilization
 
----
-
-**Author**: Sean Hankins  
-**Score**: 92.925/100
 

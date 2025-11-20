@@ -2,7 +2,7 @@
 
 A cycle-accurate simulator implementing a modern superscalar out-of-order processor microarchitecture with register renaming, reorder buffer, and issue queue. This project demonstrates deep understanding of processor design principles, pipeline optimization, and hardware resource management—core skills essential for FPGA development in high-performance computing systems.
 
-## 🎯 Project Overview
+## Overview
 
 This simulator models a complete out-of-order execution engine with configurable parameters for ROB (Reorder Buffer) size, Issue Queue size, and processor width. It accurately simulates instruction flow through all pipeline stages, handling data dependencies, register renaming, and out-of-order execution scheduling.
 
@@ -49,9 +49,7 @@ This simulator models a complete out-of-order execution engine with configurable
 - **Cycle-Accurate Modeling**: Precise timing simulation for performance analysis
 - **C++ Systems Programming**: Efficient data structures and queue management
 
-### FPGA Relevance
-
-This project demonstrates skills directly applicable to FPGA development:
+This project demonstrates skills directly applicable to FPGA development as well:
 
 - **Pipeline Design**: Understanding of multi-stage pipelines essential for FPGA datapath design
 - **Resource Constraints**: Managing limited ROB/IQ resources mirrors FPGA resource optimization
